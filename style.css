@@ -1,0 +1,518 @@
+/*
+Theme Name: Bankrolla
+Author: cr3ativespace
+Version: 1.0.0
+*/
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:Arial, Helvetica, sans-serif;
+}
+.column{
+	display:block;
+	margin:0 5%;
+}
+header{
+	position:relative;
+	width:100%;
+	float:left;
+}
+.nav{
+	position:absolute;
+	top:31px;
+	left:34px;
+	width:22px;
+	height:15px;
+	z-index:999;
+	cursor:pointer;	
+	transition:all ease-in-out .3s;
+	-webkit-transition:all ease-in-out .3s;
+	-moz-transition:all ease-in-out .3s;
+	-o-transition:all ease-in-out .3s
+}
+.nav span{
+	position:absolute;
+	content:"";
+	background:#fff;
+	width:100%;
+	height:3px;
+	top:6px;	
+	transition:all ease-in-out .3s;
+	-webkit-transition:all ease-in-out .3s;
+	-moz-transition:all ease-in-out .3s;
+	-o-transition:all ease-in-out .3s
+}
+.nav span:before{
+	position:absolute;
+	top:-6px;
+	content:"";
+	background:#fff;
+	width:100%;
+	height:3px;
+	transition:all ease-in-out .3s;
+	-webkit-transition:all ease-in-out .3s;
+	-moz-transition:all ease-in-out .3s;
+	-o-transition:all ease-in-out .3s
+}
+.nav span:after{
+	position:absolute;
+	top:6px;
+	content:"";
+	background:#fff;
+	width:100%;
+	height:3px;
+}
+nav{
+	position:absolute;
+	z-index:99;
+	background:rgba(0,0,0,0.5);
+	width:200px;
+	padding-top:5%;
+	left:-200px;
+	transition:all ease-in-out .3s;
+	-webkit-transition:all ease-in-out .3s;
+	-moz-transition:all ease-in-out .3s;
+	-o-transition:all ease-in-out .3s;
+}
+nav.show{
+	left:0;
+}
+.nav.close{
+	left:160px;
+}
+.nav.close span:after{
+	display:none;
+}
+.nav.close span:before{
+	transform:rotate(90deg);
+	top:0;
+}
+.nav.close span{
+	transform:rotate(45deg);
+}
+nav ul{
+	margin:0;
+	padding:0;
+}
+nav li{
+	display:block;
+	text-align:left;	
+	width:100%;
+	border-bottom:1px ridge #fff;
+}
+nav li a{
+	display:block;
+	text-decoration:none;
+	color:#fff;
+	padding:10px;
+}
+nav li:last-child{
+	border:none;
+}
+.logo{
+	position:absolute;
+	z-index:999;
+	top:4.5%;
+	left:44%;		
+}
+
+.logo a{
+	text-decoration:none;
+	color:#fff;
+	font-size:22px;
+	display:block;
+	background:url(../images/logo.png) no-repeat left center;
+	padding-left:40px;
+}
+.slider{
+	float:left;
+	width:100%;
+}
+.slider img{
+	float:left;
+	width:100%;
+}
+.visual{
+	float:left;
+	width:40%;
+	padding:3% 5%;	
+	min-height:340px;
+}
+.grey{
+	background:#d8d8d8;
+	text-align:center;
+}
+.visual h2 {
+    color: #424c65;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.visual p{
+	margin-bottom:20px;
+	font-size:18px;
+}
+.visual ul{
+	margin-left:20px;
+	font-size:18px;
+}
+.visual li{
+	font-size:18px;
+	margin-bottom:20px;
+}
+.editor-section{
+	float:left;
+	width:100%;
+	text-align:center;
+}
+.editor-section .grey-section{
+	display:inline-block;
+	position:relative;
+	background:#9b9b9b;
+	padding:0 10% 0 20%;
+	height:37px;
+	margin-bottom:40px;
+}
+.editor-section .grey-section .editor{
+	float:left;
+	width:100%;
+	background:#fff;
+	border:1px solid #9b9b9b;
+	padding:10px 20px;
+	text-align:left;
+	cursor:pointer;
+}
+.editor-section .grey-section .present{
+	float:left;
+	width:100%;
+	background:#04be5b;
+	padding:10px 20px;
+	text-align:left;
+	color:#fff;
+	border:none;
+	cursor:pointer;
+}
+.term-of-use{
+	float:left;
+	width:100%;
+	padding:40px 0;
+}
+.term-of-use h4{
+	font-size:20px;
+	margin-bottom:20px;
+	font-weight:400;
+}
+.term-of-use p{
+	font-size:14px;
+	color:#999;
+	font-weight:400;
+	margin-bottom:20px;
+	line-height:22px;
+}
+footer{
+	float:left;
+	width:100%;
+	padding:20px 0 0;
+	background:#d8d8d8;
+}
+.btns{
+	position:absolute;
+	width:100%;
+	text-align:center;
+	bottom:20%;
+}
+
+.btn {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    margin: 0 10px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+	cursor:pointer;
+	text-decoration:none;
+}
+.send-pitch{
+	background:#7ed320;
+	border:1px solid #7ed320;
+	text-decoration:none;
+}
+.slider h1 {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 100;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 100%;
+}
+.footer-widget {
+    display: inline-block;
+    width: 22%;
+    padding: 0 1%;
+}
+.footer-widget li {
+    list-style: none;
+    line-height: 26px;
+    font-size: 16px;
+    color: #666;
+}
+.widget-title {
+    color: #191919;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.main-footer{
+	padding:50px 0;
+}
+.copyright{
+	padding:20px 0;
+	background:#afafaf;
+	color:#fff;
+	text-align:center;
+}
+.copyright p{
+	font-family: 'Roboto Slab', serif;
+	font-weight:100;
+	font-size:22px;
+}
+.copyright span {
+    font-weight: 100;
+    margin: 20px 0;
+    display: block;
+    font-size: 14px;
+}
+.visual.get-start{
+	text-align:center;
+}
+.file-section{
+	display:inline-block;
+	width:80%;
+	border:2px dashed #333;
+	padding:50px 0;
+}
+.file-section .title{
+	display:block;
+	text-align:center;
+	margin-bottom:20px;
+	font-weight:600;
+	color:#444;
+}
+.file-section .bottom-text {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #777;
+}
+.file-section input[type="file"]{
+	display:inline-block;
+	clear:both;
+}
+.visual.get-start input[type="submit"] {
+    display: inline-block;
+    background: none;
+    border: 1px solid #333;
+    padding: 15px 50px;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1em;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #9b9b9b;
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+	transition:all ease-in-out 0.3s;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #333;
+}
+.inputfile:focus + label {
+	outline: none;
+	outline: -webkit-focus-ring-color auto 0px;
+}
+.main-container{
+	float:left;
+	width:100%;
+	padding-top:40px;
+}
+.main-container h2, .what-can h2{
+    color: #424c65;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+	text-align:center;
+}
+
+.visual.video p {
+    font-size: 14px;
+    color: #999;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+.invester{
+	float:left;
+	width:100%;
+	position:relative;
+}
+.invester img{
+	width:100%;
+	display:block;
+}
+.invester-text{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+}
+.invester .visual{
+	padding:3% 0;
+	color:#fff;
+}
+.invester .visual h1 {
+    font-size: 4em;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+	margin-bottom:1em;
+}
+.invester .visual h3 {
+    font-size: 2em;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+	margin-bottom:0.5em;
+}
+.invester .visual p {
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+    line-height: 26px;
+}
+
+.inv-btn{
+    margin-top: 26px;
+    display: inline-block;
+    margin-bottom: 26px;
+    padding: 10px 40px;
+    font-weight: bold;
+}
+.how-to {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+}
+.what-can{
+	float:left;
+	width:100%;
+	position:relative;
+	padding:40px 0;
+}
+.what-can p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #666;
+}
+.claim{
+	float:left;
+	width:100%;
+	margin:40px 0;
+}
+.claim li {
+    list-style: none;
+    float: left;
+    width: 26%;
+    margin-right: 3%;
+    text-align: left;
+    padding-right: 5%;
+	margin-bottom:20px;
+}
+.claim li p {
+    font-size: 14px;
+    color: #999;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 22px;
+	text-align:left;
+}
+.claim li:nth-child(3n+3){
+	float:right;
+	margin-right:0;
+}
+.claim li i{
+	width:50px;
+	height:50px;
+	background:#999;
+	display:block;
+	border-radius:50%;
+}
+.invester .visual.right {
+    padding: 3% 0;
+    color: #fff;
+	float:right;
+	text-align:right;
+}
+.logos{
+	float:left;
+	width:100%;
+	background:#808080;
+	padding:20px 0;
+}
+.logos li{
+	display:inline-block;
+	text-align:center;
+	list-style:none;
+	width:19%;
+}
+.btn.video{
+	margin-bottom:40px;
+	border-radius:20px;
+	position:relative;
+}
+
+.home-btn {
+    width: 150px !important;
+    display: inline-block;
+    border-radius: 5px;
+	padding:15px 20px; 
+}
+.ligh-green{
+	background:#4fe3c1 !important;
+	border:1px solid #4fe3c1 !important;
+}
+.light-blue{
+	background:#4990e2 !important;
+	border:1px solid #4990e2 !important;
+}
