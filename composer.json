@@ -1,6 +1,6 @@
 {
     "name": "johanospina/btheme",
     "type": "wordpress-theme",
-	"require": {"composer/installs":"v1.0.25"}
+	"require": {"composer/installers":"v1.0.25"}
   
 }
